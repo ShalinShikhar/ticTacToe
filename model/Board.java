@@ -2,15 +2,6 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-class Pair {
-    Integer first;
-    Integer second;
-
-    Pair(int f, int s) {
-        first = f;
-        second = s;
-    }
-}
 public class Board {
 
     public int size;
@@ -39,7 +30,7 @@ public class Board {
         {
             for(int j=0;j<size;j++)
             {
-                if(board[i][j]!=null)
+                if(board[i][j]==null)
                 {
                     freeCells.add(new Pair(i,j));
                 }

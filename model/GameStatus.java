@@ -1,4 +1,6 @@
 package model;
 
-public class GameStatus {
+public enum GameStatus {
+    DRAW,
+    WIN
 }
